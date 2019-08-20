@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Slap Game Encapsulated</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Slap Barney!</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="barney">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <h1>Barney</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <h1>Health:</h1>
+      <h1 id="health-enemy">100</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <h1>Hits:</h1>
+      <h1 id="hits-enemy">0</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center pt-4">
+      <button onclick="app.controller.enemyController.slap()">SLAP!!</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center pt-4">
+      <button onclick="app.controller.enemyController.reset()">RESET</button>
+    </div>
+  </div>
+  <script src="App/Main.js" type="module"></script>
+</body>
+
+</html>
